@@ -1,0 +1,21 @@
+Simple socket implementation in Java
+
+Since I couldn't find any good, simple solution for a multi-threaded socket implementation for Java, 
+I, with some help from StackOverflow and users on Gathering of Tweakers (Woy, Herko_ter_Horst), I 
+made this quite simple implementation of sockets.
+
+This project contains a Maven project with three modules:
+* Server: Multi-threaded socket server that currently echo's a simple message.
+* Client: Client that goes with the server and reads input from a CLI.
+* Shared: Shared code, which is currently only the base class for sending byte arrays over sockets.
+
+This code is ready to go, but has to be modified to suit your own needs. You can, for example, make
+a simple client-server chat client or a remote file browser. With the ability to send byte arrays it
+is even possible to send files or binary data over the network.
+
+Thanks again to:
+ - Woy: http://tweakers.net/gallery/6143
+ - Herko_ter_Horst: http://tweakers.net/gallery/70160
+ - Devschuur: http://gathering.tweakers.net/forum/list_messages/1586020
+ - StackOverflow: http://stackoverflow.com/questions/2878867/how-to-send-an-array-of-bytes-over-a-tcp-connection-java-programming
+ - Kevin Brock: http://stackoverflow.com/users/219394/kevin-brock
