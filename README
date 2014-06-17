@@ -1,8 +1,8 @@
 Simple socket implementation in Java
 
 Since I couldn't find any good, simple solution for a multi-threaded socket implementation for Java, 
-I, with some help from StackOverflow and users on Gathering of Tweakers (Woy, Herko_ter_Horst), I 
-made this quite simple implementation of sockets.
+I, with some help from StackOverflow and users on Gathering of Tweakers, I made this quite simple 
+implementation of sockets.
 
 This project contains a Maven project with three modules:
 * Server: Multi-threaded socket server that currently echo's a simple message.
@@ -12,6 +12,10 @@ This project contains a Maven project with three modules:
 This code is ready to go, but has to be modified to suit your own needs. You can, for example, make
 a simple client-server chat client or a remote file browser. With the ability to send byte arrays it
 is even possible to send files or binary data over the network.
+
+This repo also goes great with another function I've read last week and which can be found as a Gist:
+https://gist.github.com/alex3305/40ebd0fab0e86457b576 -- which provides a easy (Java 8) function that
+can do input validation with quotes, so spaces can be added in parameters. 
 
 Thanks again to:
  - Woy: http://tweakers.net/gallery/6143
